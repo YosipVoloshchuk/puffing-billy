@@ -56,7 +56,7 @@ module Billy
             )
           end
 
-          Billy.log(:info, "puffing-billy: PROXY #{method} succeeded for '#{url}'")
+          Billy.log(:info, "puffing-billy: PROXY #{method} succeeded with status code '#{response[:status]}' for '#{url}'")
           return response
         end
       end
